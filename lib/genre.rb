@@ -23,6 +23,7 @@ class Genre
 
   def artists
     @@all.map do |genre|
+      binding.pry
       genre.artist
     end
   end
