@@ -11,22 +11,22 @@ class Doctor
   end
 
   def self.all
-    @@all.each {|song| puts song}
+    @@all.each {|doc| puts doc}
   end
 
-  def new_song(name, genre)
-    song = Song.new(name, self, genre)
+  def new_appointment(name, date)
+    appointment = Appointment.new(name, self, date)
   end
 
-  def songs
-    Song.all.select do |song|
-      song.artist == self
+  def appointments
+    Appointment.all.select do |appointments|
+      appointments.doctor == self
     end
   end
 
-  def genres
-    songs.map do |song|
-      song.genre
+  def patients
+    appointments.map do |appointments|
+      appointments.patients
     end
   end
 
