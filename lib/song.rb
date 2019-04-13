@@ -1,0 +1,20 @@
+require 'pry'
+
+class Song
+
+  attr_accessor :artist, :genre
+
+  @@all = []
+
+  def initialize(waiter, customer, total, tip=0)
+    @waiter = waiter
+    @customer = customer
+    @total = total
+    @tip = tip
+    @@all << self
+  end
+
+  def self.all
+    @@all
+  end
+end
