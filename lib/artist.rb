@@ -19,11 +19,11 @@ class Artist
     # the song should know it belongs to the artist
   end
 
-  def songs
-    Song.all.select do |song|
-      song.artist == self
-    end
-  end
+  # def songs
+  #   Song.all.select do |song|
+  #     song.artist == self
+  #   end
+  # end
 
   def genres
     song.map do |song|
