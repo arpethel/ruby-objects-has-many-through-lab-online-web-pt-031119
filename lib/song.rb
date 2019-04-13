@@ -14,6 +14,6 @@ class Song
   end
 
   def self.all
-    @@all
+    @@all.each {|song| puts song}
   end
 end
