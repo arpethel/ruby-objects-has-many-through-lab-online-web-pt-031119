@@ -23,7 +23,7 @@ class Genre
 
   def artists
     @@all.map do |genre|
-      genre.artists
+      genre.artist
     end
   end
 
