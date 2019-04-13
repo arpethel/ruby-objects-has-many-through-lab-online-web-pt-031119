@@ -27,7 +27,7 @@ class Genre
     # @@all.map do |genre|
     #   # binding.pry
     #   genre.artist
-    end
+    # end
   end
 
 
