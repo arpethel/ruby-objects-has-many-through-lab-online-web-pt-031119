@@ -16,7 +16,7 @@ class Artist
 
   def new_song(name, genre)
     binding.pry
-    Song.new(name, self, genre)
+    song = Song.new(name, self, genre)
     # the song should know it belongs to the artist
   end
 
