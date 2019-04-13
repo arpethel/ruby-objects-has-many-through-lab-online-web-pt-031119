@@ -1,5 +1,5 @@
 # require 'pry'
-# 
+#
 # class Song
 #   attr_accessor :name, :artist, :genre
 #   @@all = []
@@ -10,7 +10,7 @@
 #     @@all << self
 #     # binding.pry
 #   end
-# 
+#
 #   def self.all
 #     @@all.each {|song| puts song}
 #   end
