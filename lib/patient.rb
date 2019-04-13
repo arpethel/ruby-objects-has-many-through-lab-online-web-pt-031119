@@ -15,8 +15,8 @@ class Patient
     @@all.each {|patient| puts patient}
   end
 
-  def new_appointment(patient, date)
-    appointment = Appointment.new(patient, self, date)
+  def new_appointment(doctor, date)
+    appointment = Appointment.new(doctor, self, date)
   end
 
   def appointments
